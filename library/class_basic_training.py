@@ -85,6 +85,7 @@ class BasicTraining:
                     "cosine_with_restarts",
                     "linear",
                     "polynomial",
+                    "piecewise_constant"
                 ],
                 value=lr_scheduler_value,
             )

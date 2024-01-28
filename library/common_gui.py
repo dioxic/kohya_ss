@@ -657,7 +657,7 @@ def run_cmd_training(**kwargs):
 
     lr_warmup_steps = kwargs.get('lr_warmup_steps', '')
     if lr_warmup_steps:
-        if lr_scheduler == 'constant':
+        if lr_scheduler in ['constant', 'piecewise_constant']:
             log.info(
                 "Can't use LR warmup with LR Scheduler constant... ignoring..."
             )
